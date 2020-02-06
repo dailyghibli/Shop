@@ -1,0 +1,10 @@
+<div class="row">
+  <div class="card col-3 m-2" *ngFor="let product of products">
+    <img src="http://localhost:3000/{{product.image}}">
+    <div class="card-body">
+      <h5 class="card-title">{{product.name}} - <span class="badge badge-warning">{{product.price}} $</span></h5>
+      <p class="card-text">{{product.description}} </p>
+      <button class="btn btn-success" (click)="addToCart(product)">Add to cart</button>
+    </div>
+  </div>
+</div>

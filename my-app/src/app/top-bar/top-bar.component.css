@@ -1,0 +1,16 @@
+#suche {
+  background:none repeat scroll 0 0 #F6F6F4;
+  float:right;
+  clear:right;
+  width:auto;
+  display:inline;
+  padding:7px 7px 5px;
+  height:30px;
+  border-radius: 3px;
+}
+ 
+#suche:focus {
+  font-size: 1.5em;
+  width: 50%;
+}
+

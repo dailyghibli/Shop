@@ -1,0 +1,48 @@
+<div id="menu">
+	<ul>
+		<li class="topmenu">
+			<a href="">Clothing</a>
+			<ul>
+				<div *ngFor="let product of products; index as productId">
+					<h3>
+						<a [title]="product.name + ' details' " [routerLink]="['/products', productId]">
+							{{ product.name }}
+
+						</a>
+					</h3>
+				</div>
+			</ul>
+		</li>
+		<li class="topmenu">
+			<a href="">Shoes</a>
+			<ul>
+				<div *ngFor="let shoe of shoes; index as shoeId">
+					<h3>
+						<a [title]="shoe.name + ' details' " [routerLink]="['/shoes', shoeId]">
+							{{ shoe.name }}
+
+						</a>
+					</h3>
+				</div>
+			</ul>
+		</li>
+		<li class="topmenu">
+			<a href="">Bags</a>
+			<ul>
+				<div *ngFor="let bag of bags; index as bagId">
+					<h3>
+						<a [title]="bag.name + ' details' " [routerLink]="['/bags', bagId]">
+							{{ bag.name }}
+
+						</a>
+					</h3>
+				</div>
+			</ul>
+		</li>
+	</ul>
+</div>
+
+<div class="suche">
+	<input type="text" id="suche" placeholder="Search...">
+	<input type="submit" class="button" value = "Search">
+</div>
